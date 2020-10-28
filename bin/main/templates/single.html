@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <style>
+    body {
+      background-image: url('images/single.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style> 
+  <title>Todo-Spring</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+ 
+  <!-- Page Content -->
+<div class="container">
+  <div class="jumbotron jumbotron-fluid bg-white">
+    <div class="container">
+      <h1 class="display-4" th:text="${item.name}">Fluid jumbotron</h1>
+      <p class="lead" th:text="${item.description}">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      <button th:onclick="location.href = '/';" class="btn btn-primary">Go back</button>
+    </div>
+  </div>
+</div>            
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
